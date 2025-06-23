@@ -42,41 +42,30 @@
    ```bash
    git clone https://github.com/yourusername/huddle-prototype.git
    cd huddle-prototype
-Install dependencies
+   ```
 
-bash
-Copy
-Edit
-npm install
-Run the development server
+2. **Install dependencies**
 
-bash
-Copy
-Edit
-npm run dev
-Open your browser at http://localhost:3000
+   ```bash
+   npm install
+   ```
 
-Running Tests
-bash
-Copy
-Edit
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+
+   ```text
+   http://localhost:3000
+   ```
+
+---
+
+## Running Tests
+
+```bash
 npm test
-Branch Strategy
-main — stable, production-ready code
-
-develop — integration branch for features
-
-feature/xxx — feature branches
-
-hotfix/xxx — urgent fixes on main
-
-Contribution
-Contributions are welcome!
-
-Fork the repo
-
-Create a branch (feature/your-feature, hotfix/your-fix)
-
-Commit your changes with clear messages
-
-Open a pull request against develop
+```
