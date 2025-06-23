@@ -1,34 +1,47 @@
 # Huddle Prototype
 
-> A fast, interactive cross-platform prototype for Huddle — designed to test core user flows and UI.
+> Fast, interactive web prototype for Huddle — built to validate core user flows and UI.
 
 ---
 
-## 🚀 Project Overview
+## Project Structure
 
-This repo contains the latest prototype for Huddle, built using Firebase, React Native, and TypeScript.
+- **public/**  
+  Static assets (images, favicon, fonts)
 
-The goal: Validate and iterate the concept quickly, gather feedback, and set ourselves apart.
+- **src/**  
+  Source code (components, styles, main app files)
 
----
+- **tests/**  
+  Unit and integration tests
 
-## 📂 File Structure
-/public # Static assets like images, icons, fonts
-/src # Source code (components, styles, main app files)
-/tests # Automated and manual tests
-.gitignore # Files/folders to ignore in git
-LICENSE # License for this project
-README.md # This file
+- **.gitignore**  
+  Git ignore rules
+
+- **LICENSE**  
+  Project license
+
+- **README.md**  
+  This file
+
+- **package.json**  
+  Node dependencies and scripts
+
+- **tsconfig.json**  
+  TypeScript configuration (if applicable)
+
+- **vite.config.ts**  
+  Vite build tool config (or webpack.config.js)
 
 ---
 
 ## Getting Started
 
-1. Clone the repo
+1. **Clone the repo**
 
-```bash
-git clone https://github.com/yourusername/huddle-prototype.git
-cd huddle-prototype
+   ```bash
+   git clone https://github.com/yourusername/huddle-prototype.git
+   cd huddle-prototype
 Install dependencies
 
 bash
@@ -49,7 +62,7 @@ Copy
 Edit
 npm test
 Branch Strategy
-main — stable production-ready branch
+main — stable, production-ready code
 
 develop — integration branch for features
 
@@ -58,4 +71,12 @@ feature/xxx — feature branches
 hotfix/xxx — urgent fixes on main
 
 Contribution
-Contributions welcome! Please open issues or pull requests and follow the branch strategy.
+Contributions are welcome!
+
+Fork the repo
+
+Create a branch (feature/your-feature, hotfix/your-fix)
+
+Commit your changes with clear messages
+
+Open a pull request against develop
