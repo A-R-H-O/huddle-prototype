@@ -22,10 +22,40 @@ README.md # This file
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
-1. Clone the repo:
+1. Clone the repo
 
 ```bash
 git clone https://github.com/yourusername/huddle-prototype.git
 cd huddle-prototype
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Run the development server
+
+bash
+Copy
+Edit
+npm run dev
+Open your browser at http://localhost:3000
+
+Running Tests
+bash
+Copy
+Edit
+npm test
+Branch Strategy
+main — stable production-ready branch
+
+develop — integration branch for features
+
+feature/xxx — feature branches
+
+hotfix/xxx — urgent fixes on main
+
+Contribution
+Contributions welcome! Please open issues or pull requests and follow the branch strategy.
