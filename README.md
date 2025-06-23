@@ -1,6 +1,6 @@
 # Huddle Prototype
 
-> Fast, interactive web prototype for Huddle — built to validate core user flows and UI.
+> Fast, interactive web prototype for Huddle — built to validate core user flows and set us apart.
 
 ---
 
