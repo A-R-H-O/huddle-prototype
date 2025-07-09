@@ -1,19 +1,21 @@
-import Constants from 'expo-constants'
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+import Constants from 'expo-constants';
+
+const extra = Constants.expoConfig?.extra ?? {};
 
 const firebaseConfig = {
-  apiKey: Constants.manifest?.extra?.FIREBASE_API_KEY,
-  authDomain: Constants.manifest?.extra?.FIREBASE_AUTH_DOMAIN,
-  projectId: Constants.manifest?.extra?.FIREBASE_PROJECT_ID,
-  storageBucket: Constants.manifest?.extra?.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: Constants.manifest?.extra?.FIREBASE_MESSAGING_SENDER_ID,
-  appId: Constants.manifest?.extra?.FIREBASE_APP_ID,
-}
+  apiKey: extra.FIREBASE_API_KEY,
+  authDomain: extra.FIREBASE_AUTH_DOMAIN,
+  projectId: extra.FIREBASE_PROJECT_ID,
+  storageBucket: extra.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: extra.FIREBASE_MESSAGING_SENDER_ID,
+  appId: extra.FIREBASE_APP_ID,
+};
+
+console.log(firebaseConfig);
 
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
+const auth = getAuth(app);
+
+export { app, auth };
